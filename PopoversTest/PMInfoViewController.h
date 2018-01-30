@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PMInfoViewController.h
 //  PopoversTest
 //
 //  Created by Pavel on 30.01.2018.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
-- (IBAction) actionGetInfo: (UIBarButtonItem *) sender;
+@interface PMInfoViewController : UIViewController
 
 @end
-

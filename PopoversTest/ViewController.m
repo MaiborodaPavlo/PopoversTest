@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "PMInfoViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIPopoverPresentationControllerDelegate>
+
+@property (strong, nonatomic) UIPopoverPresentationController *popover;
 
 @end
 
@@ -25,5 +28,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions
+
+- (IBAction) actionGetInfo: (UIBarButtonItem *) sender {
+    
+    PMInfoViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier: @"PMInfoViewController"];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        
+        // init popover
+        vc.preferredContentSize = CGSizeMake(300, 300);
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        self.popover = vc.popoverPresentationController;
+        self.popover.delegate = self;
+        self.popover.sourceView = self.view;
+        self.popover.barButtonItem = sender;
+        
+        [self presentViewController: vc animated:YES completion:nil];
+    }
+}
+
+#pragma mark - UIPopoverPresentationControllerDelegate
+
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
+    
+    self.popover = nil;
+}
+
+- (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController: (UIPresentationController *) controller {
+    
+    return UIModalPresentationNone;
+}
 
 @end

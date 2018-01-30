@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E918C10D2020C07500B5B4D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C10C2020C07500B5B4D0 /* AppDelegate.m */; };
 		E918C1102020C07500B5B4D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C10F2020C07500B5B4D0 /* ViewController.m */; };
-		E918C1132020C07500B5B4D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1112020C07500B5B4D0 /* Main.storyboard */; };
+		E918C1132020C07500B5B4D0 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1112020C07500B5B4D0 /* iPhone.storyboard */; };
 		E918C1152020C07500B5B4D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E918C1142020C07500B5B4D0 /* Assets.xcassets */; };
 		E918C1182020C07500B5B4D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1162020C07500B5B4D0 /* LaunchScreen.storyboard */; };
 		E918C11B2020C07500B5B4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C11A2020C07500B5B4D0 /* main.m */; };
+		E918C1222020C09B00B5B4D0 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1212020C09B00B5B4D0 /* iPad.storyboard */; };
+		E918C1252020CF7600B5B4D0 /* PMInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,14 @@
 		E918C10C2020C07500B5B4D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E918C10E2020C07500B5B4D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E918C10F2020C07500B5B4D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E918C1122020C07500B5B4D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E918C1122020C07500B5B4D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		E918C1142020C07500B5B4D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E918C1172020C07500B5B4D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E918C1192020C07500B5B4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E918C11A2020C07500B5B4D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E918C1212020C09B00B5B4D0 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		E918C1232020CF7600B5B4D0 /* PMInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMInfoViewController.h; sourceTree = "<group>"; };
+		E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +67,10 @@
 				E918C10C2020C07500B5B4D0 /* AppDelegate.m */,
 				E918C10E2020C07500B5B4D0 /* ViewController.h */,
 				E918C10F2020C07500B5B4D0 /* ViewController.m */,
-				E918C1112020C07500B5B4D0 /* Main.storyboard */,
+				E918C1232020CF7600B5B4D0 /* PMInfoViewController.h */,
+				E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */,
+				E918C1112020C07500B5B4D0 /* iPhone.storyboard */,
+				E918C1212020C09B00B5B4D0 /* iPad.storyboard */,
 				E918C1142020C07500B5B4D0 /* Assets.xcassets */,
 				E918C1162020C07500B5B4D0 /* LaunchScreen.storyboard */,
 				E918C1192020C07500B5B4D0 /* Info.plist */,
@@ -129,9 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E918C1222020C09B00B5B4D0 /* iPad.storyboard in Resources */,
 				E918C1182020C07500B5B4D0 /* LaunchScreen.storyboard in Resources */,
 				E918C1152020C07500B5B4D0 /* Assets.xcassets in Resources */,
-				E918C1132020C07500B5B4D0 /* Main.storyboard in Resources */,
+				E918C1132020C07500B5B4D0 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E918C1102020C07500B5B4D0 /* ViewController.m in Sources */,
+				E918C1252020CF7600B5B4D0 /* PMInfoViewController.m in Sources */,
 				E918C11B2020C07500B5B4D0 /* main.m in Sources */,
 				E918C10D2020C07500B5B4D0 /* AppDelegate.m in Sources */,
 			);
@@ -151,12 +161,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E918C1112020C07500B5B4D0 /* Main.storyboard */ = {
+		E918C1112020C07500B5B4D0 /* iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E918C1122020C07500B5B4D0 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		E918C1162020C07500B5B4D0 /* LaunchScreen.storyboard */ = {
