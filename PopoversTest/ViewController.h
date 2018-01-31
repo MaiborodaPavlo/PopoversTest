@@ -10,6 +10,12 @@
 
 @interface ViewController : UITableViewController
 
+
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameField;
+@property (weak, nonatomic) IBOutlet UITextField *birthField;
+@property (weak, nonatomic) IBOutlet UITextField *educationField;
+
 - (IBAction) actionGetInfo: (UIBarButtonItem *) sender;
 
 @end

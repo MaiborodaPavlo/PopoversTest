@@ -1,0 +1,26 @@
+//
+//  PMBirthViewController.h
+//  PopoversTest
+//
+//  Created by Pavel on 30.01.2018.
+//  Copyright © 2018 Pavel Maiboroda. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class PMBirthViewController;
+
+@protocol PMBirthViewControllerDelegate <NSObject>
+
+- (void) birthViewController: (PMBirthViewController *) controller didChangeDatePiker: (NSString *) item;
+
+@end
+
+@interface PMBirthViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePiker;
+@property (weak, nonatomic) id <PMBirthViewControllerDelegate> delegate;
+
+- (IBAction) actionValueChanged: (UIDatePicker *) sender;
+
+@end

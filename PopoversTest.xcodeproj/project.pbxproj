@@ -15,6 +15,7 @@
 		E918C11B2020C07500B5B4D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C11A2020C07500B5B4D0 /* main.m */; };
 		E918C1222020C09B00B5B4D0 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1212020C09B00B5B4D0 /* iPad.storyboard */; };
 		E918C1252020CF7600B5B4D0 /* PMInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */; };
+		E918C1282020E32000B5B4D0 /* PMBirthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C1272020E32000B5B4D0 /* PMBirthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		E918C1212020C09B00B5B4D0 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		E918C1232020CF7600B5B4D0 /* PMInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMInfoViewController.h; sourceTree = "<group>"; };
 		E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMInfoViewController.m; sourceTree = "<group>"; };
+		E918C1262020E32000B5B4D0 /* PMBirthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMBirthViewController.h; sourceTree = "<group>"; };
+		E918C1272020E32000B5B4D0 /* PMBirthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMBirthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				E918C10F2020C07500B5B4D0 /* ViewController.m */,
 				E918C1232020CF7600B5B4D0 /* PMInfoViewController.h */,
 				E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */,
+				E918C1262020E32000B5B4D0 /* PMBirthViewController.h */,
+				E918C1272020E32000B5B4D0 /* PMBirthViewController.m */,
 				E918C1112020C07500B5B4D0 /* iPhone.storyboard */,
 				E918C1212020C09B00B5B4D0 /* iPad.storyboard */,
 				E918C1142020C07500B5B4D0 /* Assets.xcassets */,
@@ -153,6 +158,7 @@
 			files = (
 				E918C1102020C07500B5B4D0 /* ViewController.m in Sources */,
 				E918C1252020CF7600B5B4D0 /* PMInfoViewController.m in Sources */,
+				E918C1282020E32000B5B4D0 /* PMBirthViewController.m in Sources */,
 				E918C11B2020C07500B5B4D0 /* main.m in Sources */,
 				E918C10D2020C07500B5B4D0 /* AppDelegate.m in Sources */,
 			);
