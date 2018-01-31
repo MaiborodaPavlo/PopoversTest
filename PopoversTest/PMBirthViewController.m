@@ -12,6 +12,8 @@
 
 @interface PMBirthViewController ()
 
+@property (strong, nonatomic) NSDateFormatter *dateFormatter;
+
 @end
 
 @implementation PMBirthViewController
@@ -19,9 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.dateFormatter = [[NSDateFormatter alloc] init];
+    [self.dateFormatter setDateFormat: @"dd MMMM yyyy"];
+    
     UIBarButtonItem *buttonDone = [[UIBarButtonItem alloc] initWithTitle: @"Done" style: UIBarButtonItemStyleDone target: self action: @selector(actionBirthDone:)];
     
     [self.navigationItem setRightBarButtonItem: buttonDone];
+    
+    if (![self.date isEqualToString:@""]) {
+        
+        NSDate *date = [self.dateFormatter dateFromString: self.date];
+        [self.datePiker setDate: date];
+    }
 
 }
 
@@ -33,18 +44,13 @@
 #pragma mark - Actions
 
 - (void) actionBirthDone: (UIBarButtonItem *) sender {
-    
-    
-    
+
     [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 - (IBAction) actionValueChanged: (UIDatePicker *) sender {
 
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat: @"dd MMMM yyyy"];
-
-    NSString *itemToPassBack = [dateFormatter stringFromDate: sender.date];
+    NSString *itemToPassBack = [self.dateFormatter stringFromDate: sender.date];
     [self.delegate birthViewController: self didChangeDatePiker: itemToPassBack];
 }
 

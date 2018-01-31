@@ -89,6 +89,10 @@ typedef enum {
 
         self.popover.sourceRect = CGRectMake(textField.frame.origin.x, textField.frame.origin.y + 140, CGRectGetWidth(textField.frame), CGRectGetHeight(textField.frame));
         
+        if (textField.text) {
+            vc.date = textField.text;
+        }
+        
         [self presentViewController: nav animated: YES completion: nil];
 
         return NO;

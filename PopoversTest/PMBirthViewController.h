@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePiker;
 @property (weak, nonatomic) id <PMBirthViewControllerDelegate> delegate;
 
+@property (strong, nonatomic) NSString *date;
+
 - (IBAction) actionValueChanged: (UIDatePicker *) sender;
 
 @end
