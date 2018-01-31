@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91123782021EB2F003DC9D5 /* PMEducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91123772021EB2F003DC9D5 /* PMEducationViewController.m */; };
 		E918C10D2020C07500B5B4D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C10C2020C07500B5B4D0 /* AppDelegate.m */; };
 		E918C1102020C07500B5B4D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918C10F2020C07500B5B4D0 /* ViewController.m */; };
 		E918C1132020C07500B5B4D0 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E918C1112020C07500B5B4D0 /* iPhone.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91123762021EB2F003DC9D5 /* PMEducationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMEducationViewController.h; sourceTree = "<group>"; };
+		E91123772021EB2F003DC9D5 /* PMEducationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMEducationViewController.m; sourceTree = "<group>"; };
 		E918C1082020C07500B5B4D0 /* PopoversTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoversTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918C10B2020C07500B5B4D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E918C10C2020C07500B5B4D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				E918C1242020CF7600B5B4D0 /* PMInfoViewController.m */,
 				E918C1262020E32000B5B4D0 /* PMBirthViewController.h */,
 				E918C1272020E32000B5B4D0 /* PMBirthViewController.m */,
+				E91123762021EB2F003DC9D5 /* PMEducationViewController.h */,
+				E91123772021EB2F003DC9D5 /* PMEducationViewController.m */,
 				E918C1112020C07500B5B4D0 /* iPhone.storyboard */,
 				E918C1212020C09B00B5B4D0 /* iPad.storyboard */,
 				E918C1142020C07500B5B4D0 /* Assets.xcassets */,
@@ -160,6 +165,7 @@
 				E918C1252020CF7600B5B4D0 /* PMInfoViewController.m in Sources */,
 				E918C1282020E32000B5B4D0 /* PMBirthViewController.m in Sources */,
 				E918C11B2020C07500B5B4D0 /* main.m in Sources */,
+				E91123782021EB2F003DC9D5 /* PMEducationViewController.m in Sources */,
 				E918C10D2020C07500B5B4D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

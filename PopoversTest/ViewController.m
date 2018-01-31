@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "PMInfoViewController.h"
 #import "PMBirthViewController.h"
+#import "PMEducationViewController.h"
 
-@interface ViewController () <UIPopoverPresentationControllerDelegate, UITextFieldDelegate, PMBirthViewControllerDelegate>
+@interface ViewController () <UIPopoverPresentationControllerDelegate, UITextFieldDelegate, PMBirthViewControllerDelegate, PMEducationViewControllerDelegate>
 
 @property (strong, nonatomic) UIPopoverPresentationController *popover;
 
@@ -96,11 +97,43 @@ typedef enum {
         [self presentViewController: nav animated: YES completion: nil];
 
         return NO;
-    } else if (textField.tag == PMTextFieldEducation) {
         
+    } else if ([textField isEqual: self.educationField]) {
+        
+        PMEducationViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier: @"PMEducationViewController"];
+        vc.delegate = self;
+        
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: vc];
+        
+        vc.preferredContentSize = CGSizeMake(400, 200);
+        nav.modalPresentationStyle = UIModalPresentationPopover;
+        self.popover = nav.popoverPresentationController;
+        self.popover.delegate = self;
+        self.popover.sourceView = self.view;
+        
+        self.popover.sourceRect = CGRectMake(textField.frame.origin.x, textField.frame.origin.y + 180, CGRectGetWidth(textField.frame), CGRectGetHeight(textField.frame));
+        
+        if (![textField.text isEqualToString: @""]) {
+            vc.education = textField.text;
+        }
+        
+        [self presentViewController: nav animated: YES completion: nil];
+
         return NO;
     } else {
         
+        return YES;
+    }
+}
+
+- (BOOL) textField: (UITextField *) textField shouldChangeCharactersInRange: (NSRange) range replacementString:(NSString *) string {
+    
+    NSCharacterSet *validationSet = [[NSCharacterSet letterCharacterSet] invertedSet];
+    NSArray *components = [string componentsSeparatedByCharactersInSet: validationSet];
+    
+    if ([components count] > 1) {
+        return NO;
+    } else {
         return YES;
     }
 }
@@ -122,5 +155,14 @@ typedef enum {
     
     self.birthField.text = itemDate;
 }
+
+#pragma mark - PMEducationViewControllerDelegate
+
+- (void) educationViewController: (PMEducationViewController *) controller didChangeCheckedCell: (NSString *) item {
+    
+    NSLog(@"didChangeCheckedCell: %@", item);
+    self.educationField.text = item;
+}
+
 
 @end
