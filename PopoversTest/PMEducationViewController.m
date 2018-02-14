@@ -61,6 +61,7 @@
     
     NSString *educationString = cell.textLabel.text;
     self.education = educationString;
+    
     [self.delegate educationViewController: self didChangeCheckedCell: educationString];
 }
 
